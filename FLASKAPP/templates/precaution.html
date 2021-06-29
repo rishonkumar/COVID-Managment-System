@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>covidprecaution</title>
+
+    <body style="background-color:rgb(228, 213, 130);">
+        <style>
+            #button {
+                border: 20px;
+                padding: 10, 20;
+                background: rgb(240, 186, 186);
+                margin-top: 10px;
+                outline: none;
+            }
+            
+            div {
+                background-color: rgb(241, 241, 237);
+                padding: 20 20;
+                float: bottom;
+            }
+            
+            .logo img {
+                width: 100px;
+                float: left;
+                height: 80;
+            }
+        </style>
+
+        <body>
+            <div class="logo">
+
+                <img src="logo.png" alt="">
+            </div>
+
+            <center>
+
+                <div>
+                    <h2 style="color:red;">Continue to stay home and stay safe.</h2>
+                    <h3 style="color:blue;">To prevent the spread of COVID-19:</h3>
+                    <h3 style="color:blue;"> Clean your hands often. Use soap and water, or an alcohol-based hand rub.</h3>
+                    <h3 style="color:blue;">Maintain a safe distance from anyone who is coughing or sneezing.</h3>
+                    <h3 style="color:blue;">Wear a mask when physical distancing is not possible.</h3>
+                    <h3 style="color:blue;">Don’t touch your eyes, nose or mouth.</h3>
+                    <h3 style="color:blue;">Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</h3>
+                    <h3 style="color:blue;">Stay home if you feel unwell.</h3>
+                    <h3 style="color:blue;">If you have a fever, cough and difficulty breathing, seek medical attention.</h3>
+                    <button type="button"><a href="{{ url_for('home') }}" >END</a>
+                    <button type="button"><a href="{{ url_for('data') }}" >ADD_DETAILS</a>
+            </div>
+        </center>
+        </body>
+        
+    </head>
+</html>

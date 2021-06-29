@@ -1,0 +1,89 @@
+<html>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(8, 27, 61);
+    }
+    
+    .logo img {
+        width: 10px;
+        float: left;
+        height: 80px;
+    }
+    
+    .heading {
+        color: white;
+        font-variant-position: inherit;
+        font-feature-settings: "c2sc";
+        position: center;
+        margin-top: 40px;
+        ;
+    }
+    
+    table,
+    th,
+    td {
+        border: 10px solid black;
+        border-collapse: collapse;
+        color: ivory;
+        font-size: 30px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #button {
+        border: 20px;
+        padding: 10, 20;
+        background: rgb(148, 141, 141);
+        outline: none;
+    }
+</style>
+
+<body>
+    <div class="logo">
+
+        <img src="logo.png" alt="">
+    </div>
+    <div class="heading">
+        <center>
+            <h1>2021 YEAR INCHARGE:</h1>
+        </center>
+
+
+    </div>
+    <center>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>E-mail</th>
+                <th>Phone Number</th>
+            </tr>
+            <tr>
+                <td>Jairam</td>
+                <td>President</td>
+                <td>jair245@gmail.com</td>
+                <td>+91 9963519280</td>
+            </tr>
+            <tr>
+                <td>Priya</td>
+                <td>Vice President</td>
+                <td>pri12@gmail.com</td>
+                <td>+91 9963555330</td>
+            </tr>
+            <tr>
+                <td>Santhosh</td>
+                <td>Secretary</td>
+                <td>santymi@gmail.com</td>
+                <td>+91 9611002885</td>
+            </tr>
+        </table>
+    </center>
+    <center>
+        <button type="submit"><a href="{{ url_for('home') }}">Back to Home</a>
+          </center>
+           
+        
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Database</title>
+    <style>
+        body {
+            background-color: rgb(223, 106, 106);
+        }
+        
+        .card {
+            background: rgb(136, 213, 248);
+        }
+        
+        .xx {
+            top: 50%;
+            left: 50%;
+            position: fixed;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+</head>
+<center>
+    <h1>Welcome to your KPG Portal</h1>
+
+</center>
+
+<body>
+    <form method="POST" action="">
+        <div class="xx">
+            <div class="card">
+                <center>
+                    <label for="DOOR_NUMBER">DOOR_NUMBER:</label>
+                    <input type="text" id="DOOR_NUMBER" name="DOOR_NUMBER"><br><br>
+                    <label for="NAME">NAME</label>
+                    <input type="text" id="NAME" name="NAME"><br><br>
+                    <label for="AGE">AGE</label>
+                    <input type="number" id="AGE" name="AGE"><br><br>
+                    <label for="BLOOD">BLOOD</label>
+                    <input type="text" id="BLOOD" name="BLOOD"><br><br>
+                    <label for="CSTATUS">CSTATUS</label>
+                    <input type="text" id="CSTATUS" name="CSTATUS"><br><br>
+                    <label for="SYMPTOMS">SYMPTOMS</label>
+                    <input type="text" id="SYMPTOMS" name="SYMPTOMS"><br><br>
+                    <label for="VACCINATED">VACCINATED</label>
+                    <input type="text" id="VACCINATED" name="VACCINATED"><br><br>
+                </center>
+                <center>
+                    <button type="submit">Add</button>
+                </center>
+
+
+    </form>
+
+    <center>
+        <a href="{{ url_for('precaution') }}">
+            <button type="button">Next</button>
+    </center>
+
+
+
+</body>
+
+</html>
